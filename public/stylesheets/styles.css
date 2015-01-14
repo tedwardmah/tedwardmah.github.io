@@ -5,6 +5,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: rgb(110, 110, 110);
 	border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
 
@@ -14,11 +15,12 @@ a:visited {
 
 a[href="mailto:ted.mahoney22@gmail.com"] {
 	text-decoration: none;
+	color: black;
 	border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
 
 a[href="mailto:ted.mahoney22@gmail.com"]:visited {
-	color: rgb(110, 110, 110);
+	color: black;
 }
 
 a:hover {
@@ -134,6 +136,14 @@ header span {
 #contact-info-content li {
 	padding: 2% 0;
 	cursor: default;
+}
+
+#contact-info-content a {
+	color: black;
+}
+
+#contact-info-content a:visited {
+	color: black;
 }
 
 
