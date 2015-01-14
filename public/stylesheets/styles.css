@@ -1,3 +1,17 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 body {
 	font-size: 20px;
 	background-image: url('/images/brushed.png');
@@ -68,7 +82,6 @@ header div {
 header span {
 	position: relative;
 	top: -2px;
-	left: 1px;
 	font-size: 2em;
 	font-weight: lighter;
 	vertical-align: middle;
@@ -146,7 +159,37 @@ header span {
 	color: black;
 }
 
+#projects-container {
+	text-align: center;
+	width: 100%;
+	padding-top: 125px;
+	padding-bottom: 100px;
+}
 
+.project {
+	/*background-color: lightblue;*/
+	font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.project:hover {
+	border: none;
+}
+
+.project p {
+	font-size: .9em;
+	color: black;
+	text-align: justify;
+}
+
+.project h4 {
+	color: black;
+}
+
+.project-image-wrapper {
+	display: inline-block;
+}
 
 
 

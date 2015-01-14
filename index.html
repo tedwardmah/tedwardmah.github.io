@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tedward</title>
+	<link rel="stylesheet" href="./public/stylesheets/normalize.css">
+	<link rel="stylesheet" href="./public/stylesheets/styles.css">
+	<script src='./public/javascripts/jquery.js'></script>
+	<script src='./public/javascripts/scripts.js'></script>
+</head>
+<body>
+	<header>
+		<h1>tedward</h1><div id='line'></div><div><span>M</span></div>
+	</header>
+
+<div class='clearfix'>
+	<div id='intro'>
+		<p>Hi! I'm Ted, a full stack web developer based in NYC
+		</p>
+		<p>
+
+		</p>
+		<p>You may know me from my work in the classic TV sitcom "The Way I Happened Upon The Woman You Call Mom" or possibly from my famous talk<span class='elipsis'>s...</span>I talk a great deal about a great many subjects
+		</p>
+		<p>Please check out my sweet, super simple jQuery erb compiler to your right (or below, depending on how mobile you are)
+		</p>
+		<p>At the moment it just works on my contact details but feel free to submit pull requests or checkout my other, slightly more involved projects on <a href="https://github.com/tedwardmah">github</a></p>
+	</div>
+
+	<div id='contact-info-container'>
+		<div id='contact-info-content'>
+			<h3>CONTACT</h3>
+			<ul>
+				<a href='http://www.linkedin.com/in/tedmah'>
+					<li class='contact-item' data-dummyText='<%= connect %>' data-displayText="linkedin">
+						linkedin
+					</li>
+				</a>
+				<a href="https://github.com/tedwardmah">
+				<li class='contact-item' data-dummyText='<%= github %>' data-displayText='@tedwardmah'>
+					@tedwardmah
+				</li>
+				</a>
+				<a href="mailto:ted.mahoney22@gmail.com">
+					<li class='contact-item' data-dummyText='<%= email %>' data-displayText='ted[.]mahoney22[@]gmail[.]com'>
+						ted[.]mahoney22[@]gmail[.]com
+					</li>
+				</a> 
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div id='projects-container'>
+		<a href="http://www.livetrain.nyc">
+			<div class='project' id='livetrain'>
+				<h4>livetrain.nyc</h4>
+				<div class='project-image-wrapper'>
+					<img src="./public/images/livetrain.png" alt="livetrain.nyc">
+				</div>
+				<p>A visualization of real-time NYC subway train locations using D3 animations projected on a fully interactive Mapbox map. Single-page front-end uses CORS to consume RESTful API</p>
+			</div>
+		</a>
+	</div>
+</body>
+</html>
