@@ -14,7 +14,7 @@
 
 body {
 	font-size: 20px;
-	background-image: url('/images/brushed.png');
+	background-image: url('../images/brushed.png');
 }
 
 a {
@@ -162,8 +162,10 @@ header span {
 #projects-container {
 	text-align: center;
 	width: 100%;
-	padding-top: 125px;
-	padding-bottom: 100px;
+	margin-top: 50px;
+	padding-top: 25px;
+	padding-bottom: 125px;
+	border-top: 2px solid black;
 }
 
 .project {
