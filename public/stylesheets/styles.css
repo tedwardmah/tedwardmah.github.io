@@ -110,6 +110,7 @@ header span {
 	line-height: 150%;
 }
 
+
 .elipsis {
 	letter-spacing: 4px;
 }
@@ -117,23 +118,20 @@ header span {
 #contact-info-container {
 	float: left;
 	display: inline-block;
-	/*font-family: monaco;*/
 	font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
-	/*background-color: lightblue;*/
 	margin: 2% 5% 0 5%;
 	padding: 0;
 }
 
 #contact-info-content {
-	/*background-color: lightgrey;*/
 	min-width: 325px;
+	text-align: right;
 }
 
 #contact-info-content h3 {
 	margin: 0;
 	padding: 0;
 	padding-bottom: 3%;
-	text-align: right;
 	border-bottom: 1px solid #e67e22;
 }
 
@@ -143,7 +141,6 @@ header span {
 	margin: 0;
 	padding: 0;
 	padding-top: 3%;
-	text-align: right;
 }
 
 #contact-info-content li {
@@ -195,3 +192,22 @@ header span {
 
 
 
+
+@media (max-width: 935px) {
+	#intro {
+		max-width: 80%;
+		border-right: none;
+	}
+
+	#contact-info-container {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		min-width: 325px;
+		max-width: 65%;
+	}
+
+	#contact-info-content {
+		text-align: center;
+	}
+}
